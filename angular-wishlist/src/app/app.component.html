@@ -1,0 +1,20 @@
+<div class= "container content">
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Ruteo Simple</h1>
+      <div class="navLinks">
+        <a [routerLink]="['/home']">Home</a> <!--valor es una expresión de ts-->
+      </div>
+      </div>
+
+  </div>
+  <div class="row">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+
+  <router-outlet></router-outlet> <!--buscar qué es, de momento creo que sirve para rednerar lo que se selecciona dentro de las rutas posibles creadas en app.module.ts-->
+ 
+</div>
